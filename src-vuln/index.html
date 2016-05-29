@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+  	<style>
+      body {
+        background-color: lightgreen;
+      }
+
+      input {
+        height:50px;
+	      width:50%;
+	      border: 2px solid black;
+      }
+
+      footer {
+        position:absolute;
+        bottom:0;
+        width:100%;
+      }
+      input[type="text"]{
+        font-size:24px;
+      }
+   
+    </style>
+	  <header>
+		  <h1><bg>XSS.com</bg></h1>
+		  <h2>A System Sec Test Website for Cross-Site-Scripting</h2>
+		</header>  
+  </head>
+  <body>
+	    <form name="" action="index.php" method="GET">
+      <input type="text" name="inputtag" id="inputtag" placeholder="What do you want to know?">
+      <br>
+      <br>
+      <input type="submit" value="Search"/>
+      </form>
+  </body>
+  <footer>
+    &copy; Michael Wapp, 2016
+  </footer>
+</html>
+
